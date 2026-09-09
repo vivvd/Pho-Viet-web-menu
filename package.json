@@ -11,7 +11,8 @@
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt",
-    "test": "node --test tests/order.test.cjs"
+    "test": "node --test tests/order.test.cjs",
+    "build:vercel": "vite build --config vite.vercel.config.ts"
   },
   "dependencies": {
     "react": "19.2.6",
