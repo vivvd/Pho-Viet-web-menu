@@ -24,13 +24,16 @@ import {
 } from 'lucide-react';
 import data from '../lib/menu.json';
 import sizes from '../lib/image-sizes.json';
+
+const soupPhoOrder = ['fo-bo', 'fo-ga', 'fo-mok', 'fo-hai-shan', 'fo-sot-vang'];
+
 export default function Menu() {
   const [active, setActive] = useState('soups');
   const [lines, setLines] = useState<Line[]>([]);
   const [ready, setReady] = useState(false);
   const [selected, setSelected] = useState<Item | null>(null);
   const [option, setOption] = useState('');
-  const [view, setView] = useState<'edit' | 'waiter' | 'clear' | null>(null);
+  const [view, setView] = useState<'order' | 'clear' | null>(null);
   const [notice, setNotice] = useState('');
   const dialog = useRef<HTMLDialogElement>(null);
   const count = lines.reduce((n, l) => n + l.quantity, 0);
@@ -132,9 +135,9 @@ export default function Menu() {
                 throw new Error('Ожидается пустой объект');
               flushSync(() => {
                 setSelected(null);
-                setView('waiter');
+                setView('order');
               });
-              return { view: 'waiter', sent: false };
+              return { view: 'order', sent: false };
             },
           },
           { signal: lifecycle.signal },
@@ -176,9 +179,12 @@ export default function Menu() {
         <a className="brand" href="#top">
           pho viet<span>ВЬЕТНАМСКАЯ КУХНЯ</span>
         </a>
-        <span className="header-label">Меню · цены в BYN</span>
-        <button className="bag" onClick={() => setView('edit')}>
-          <ShoppingBag size={18} /> Мой список <span>{count}</span>
+        <div className="header-contacts">
+          <span>г. Минск, ул. Леонида Беды, 45</span>
+          <a href="tel:+375298606343">+375 29 860-63-43</a>
+        </div>
+        <button className="bag" onClick={() => setView('order')}>
+          <ShoppingBag size={18} /> Заказ <span>{count}</span>
         </button>
       </header>
       <div className="intro">
@@ -189,7 +195,7 @@ export default function Menu() {
           </h1>
         </div>
         <p>
-          От горячего фо до манго-шейка.
+          От горячего фо до домашних котлет с пюре
           <br />
           Выбирайте то, что хочется сегодня.
         </p>
@@ -226,6 +232,13 @@ export default function Menu() {
             <div className="dish-grid">
               {data.items
                 .filter((i) => i.category === cat.name)
+                .sort((a, b) => {
+                  if (cat.id !== 'soups') return 0;
+                  const aOrder = soupPhoOrder.indexOf(a.id);
+                  const bOrder = soupPhoOrder.indexOf(b.id);
+                  return (aOrder === -1 ? soupPhoOrder.length : aOrder) -
+                    (bOrder === -1 ? soupPhoOrder.length : bOrder);
+                })
                 .map((item) => (
                   <article className="dish" key={item.id}>
                     <div className="dish-photo">
@@ -303,7 +316,9 @@ export default function Menu() {
         </div>
         <div className="footer-legal">
           <p>
-            Общество с ограниченной ответственностью <strong>«Фо Вьет»</strong>
+            Общество с ограниченной ответственностью
+            <br />
+            <strong className="legal-name">«Фо Вьет»</strong>
           </p>
           <p>УНП 193811859</p>
           <p>Адрес кафе: Леонида Беды 45</p>
@@ -311,13 +326,13 @@ export default function Menu() {
       </footer>
       {count > 0 && (
         <div className="order-bar">
-          <button className="bar-summary" onClick={() => setView('edit')}>
+          <button className="bar-summary" onClick={() => setView('order')}>
             <span className="count-box">{count}</span>
             <span>
-              Мой список<strong>{money(total)}</strong>
+              Заказ<strong>{money(total)}</strong>
             </span>
           </button>
-          <button className="primary" onClick={() => setView('waiter')}>
+          <button className="primary" onClick={() => setView('order')}>
             Показать заказ <ArrowUpRight size={18} />
           </button>
         </div>
@@ -333,7 +348,7 @@ export default function Menu() {
       <dialog
         aria-labelledby="dialog-title"
         ref={dialog}
-        className={'order-dialog ' + (view === 'waiter' ? 'waiter' : '')}
+        className={'order-dialog ' + (view === 'order' ? 'order-view' : '')}
         onCancel={(e) => {
           e.preventDefault();
           close();
@@ -389,24 +404,23 @@ export default function Menu() {
           <div className="dialog-content">
             <span className="eyebrow">PHO VIET</span>
             <h2 id="dialog-title">
-              {view === 'clear'
-                ? 'Очистить список?'
-                : view === 'waiter'
-                  ? 'Заказ'
-                  : 'Мой список'}
+              {view === 'clear' ? 'Очистить заказ?' : 'Заказ'}
             </h2>
             {view === 'clear' ? (
               <>
-                <p>Все выбранные блюда будут удалены из списка.</p>
+                <p>Все выбранные блюда будут удалены из заказа.</p>
                 <div className="confirm-actions">
-                  <button className="secondary" onClick={() => setView('edit')}>
-                    Оставить список
+                  <button
+                    className="secondary"
+                    onClick={() => setView('order')}
+                  >
+                    Оставить заказ
                   </button>
                   <button
                     className="primary"
                     onClick={() => {
                       setLines([]);
-                      setView('edit');
+                      setView('order');
                     }}
                   >
                     Да, очистить
@@ -415,8 +429,8 @@ export default function Menu() {
               </>
             ) : (
               <>
-                {view === 'waiter' && (
-                  <p className="waiter-note">
+                {lines.length > 0 && (
+                  <p className="order-note">
                     Покажите этот список на кассе, чтобы передать заказ
                   </p>
                 )}
@@ -446,7 +460,7 @@ export default function Menu() {
                           <strong>
                             {money(unitPrice(line) * line.quantity)}
                           </strong>
-                          {view === 'edit' && (
+                          {
                             <div className="line-actions">
                               <div className="stepper">
                                 <button
@@ -493,7 +507,7 @@ export default function Menu() {
                                 <Trash2 size={18} />
                               </button>
                             </div>
-                          )}
+                          }
                         </div>
                       ))}
                     </div>
@@ -501,29 +515,20 @@ export default function Menu() {
                       <span>Итого</span>
                       <strong>{money(total)}</strong>
                     </div>
-                    {view === 'edit' ? (
-                      <>
-                        <button
-                          className="primary full"
-                          onClick={() => setView('waiter')}
-                        >
-                          Показать заказ <ArrowUpRight size={18} />
-                        </button>
-                        <button
-                          className="text-button"
-                          onClick={() => setView('clear')}
-                        >
-                          Очистить список
-                        </button>
-                      </>
-                    ) : (
-                      <button
-                        className="secondary full"
-                        onClick={() => setView('edit')}
-                      >
-                        Изменить список
-                      </button>
-                    )}
+                    <section className="pickup" aria-label="Заказ на самовывоз">
+                      <h3>Заказ на самовывоз</h3>
+                      <p>
+                        Позвоните нам и назовите выбранные блюда, их варианты и
+                        количество
+                      </p>
+                      <a href="tel:+375298606343">+375 29 860-63-43</a>
+                    </section>
+                    <button
+                      className="text-button"
+                      onClick={() => setView('clear')}
+                    >
+                      Очистить заказ
+                    </button>
                   </>
                 )}
               </>
