@@ -1,0 +1,771 @@
+{
+  "meta": {
+    "currency": "BYN",
+    "currency_symbol": "р.",
+    "items_count": 48,
+    "source_files": [
+      "menu 001(гарнир)+гуляшь copy.psd",
+      "menu 002 (edited)  - no soups-восстановлено.psd",
+      "menu 003-восстановлено.psd",
+      "soup2.psd"
+    ],
+    "extraction_note": "Текст извлечен из Photoshop Type Tool (TySh) и Unicode layer metadata; OCR не использовался. Позиции отфильтрованы по видимой финальной композиции PSD."
+  },
+  "categories": [
+    {
+      "id": "soups",
+      "name": "Супы",
+      "order": 1
+    },
+    {
+      "id": "wok",
+      "name": "Вок",
+      "order": 2
+    },
+    {
+      "id": "noodles",
+      "name": "Лапша",
+      "order": 3
+    },
+    {
+      "id": "hot-dishes",
+      "name": "Горячие блюда",
+      "order": 4
+    },
+    {
+      "id": "salads",
+      "name": "Салаты",
+      "order": 5
+    },
+    {
+      "id": "snacks",
+      "name": "Закуски",
+      "order": 6
+    },
+    {
+      "id": "drinks",
+      "name": "Напитки",
+      "order": 7
+    }
+  ],
+  "items": [
+    {
+      "id": "nem-garnir",
+      "category": "Горячие блюда",
+      "name": "НЕМ с гарниром",
+      "price": 16.0,
+      "image": "images/nem-garnir.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        50
+      ],
+      "display_price": "16,0 р."
+    },
+    {
+      "id": "rebra-garnir",
+      "category": "Горячие блюда",
+      "name": "РЕБРА с гарниром",
+      "price": 22.0,
+      "image": "images/rebra-garnir.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        72
+      ],
+      "display_price": "22,0 р."
+    },
+    {
+      "id": "gulyash-garnir",
+      "category": "Горячие блюда",
+      "name": "ГУЛЯШ с гарниром",
+      "price": 22.0,
+      "image": "images/gulyash-garnir.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        114
+      ],
+      "display_price": "22,0 р."
+    },
+    {
+      "id": "saigon-salat",
+      "category": "Салаты",
+      "name": "САЙГОН салат",
+      "price": 14.0,
+      "image": "images/saigon-salat.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        87
+      ],
+      "display_price": "14,0 р."
+    },
+    {
+      "id": "nem-charan-garnir",
+      "category": "Горячие блюда",
+      "name": "НЕМ И ЧАРАН с гарниром",
+      "price": 17.0,
+      "image": "images/nem-charan-garnir.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        42
+      ],
+      "display_price": "17,0 р."
+    },
+    {
+      "id": "otbivnaya-garnir",
+      "category": "Горячие блюда",
+      "name": "ОТБИВНАЯ с гарниром",
+      "price": 18.0,
+      "image": "images/otbivnaya-garnir.webp",
+      "description": "Курица",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        26
+      ],
+      "display_price": "18,0 р."
+    },
+    {
+      "id": "sosiski-garnir",
+      "category": "Горячие блюда",
+      "name": "СОСИСКИ с гарниром",
+      "price": 13.0,
+      "image": "images/sosiski-garnir.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        128
+      ],
+      "display_price": "13,0 р."
+    },
+    {
+      "id": "tom-salat",
+      "category": "Салаты",
+      "name": "ТОМ салат",
+      "price": 19.0,
+      "image": "images/tom-salat.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        143
+      ],
+      "display_price": "19,0 р."
+    },
+    {
+      "id": "charan-garnir",
+      "category": "Горячие блюда",
+      "name": "ЧАРАН (свинина) с гарниром",
+      "price": 17.0,
+      "image": "images/charan-garnir.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        34
+      ],
+      "display_price": "17,0 р."
+    },
+    {
+      "id": "com-ga",
+      "category": "Горячие блюда",
+      "name": "КОМ ГА",
+      "price": 18.0,
+      "image": "images/com-ga.webp",
+      "description": "Рис с курицей в кисло-сладком соусе. Подается с салатом",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        20
+      ],
+      "display_price": "18,0 р."
+    },
+    {
+      "id": "pelmeni-zharenye",
+      "category": "Горячие блюда",
+      "name": "ПЕЛЬМЕНИ жареные",
+      "price": 13.0,
+      "image": "images/pelmeni-zharenye.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        130
+      ],
+      "display_price": "13,0 р."
+    },
+    {
+      "id": "olivie",
+      "category": "Салаты",
+      "name": "ОЛИВЬЕ салат",
+      "price": 8.0,
+      "image": "images/olivie.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        96
+      ],
+      "display_price": "8,0 р."
+    },
+    {
+      "id": "kotlety-kuritsa-garnir",
+      "category": "Горячие блюда",
+      "name": "КОТЛЕТЫ (курица) домашние с гарниром",
+      "price": 17.0,
+      "image": "images/kotlety-kuritsa-garnir.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        68
+      ],
+      "display_price": "17,0 р."
+    },
+    {
+      "id": "podzharka-garnir",
+      "category": "Горячие блюда",
+      "name": "ПОДЖАРКА с гарниром",
+      "price": 20.0,
+      "image": "images/podzharka-garnir.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        105
+      ],
+      "notes": "Цена сопоставлена по видимому расположению в финальной композиции PSD.",
+      "display_price": "20,0 р."
+    },
+    {
+      "id": "naggetsy-fri",
+      "category": "Горячие блюда",
+      "name": "НАГГЕТСЫ (7 шт.) с фри",
+      "price": 16.0,
+      "image": "images/naggetsy-fri.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        136
+      ],
+      "display_price": "16,0 р."
+    },
+    {
+      "id": "olivie-charan",
+      "category": "Салаты",
+      "name": "ОЛИВЬЕ С ЧАРАНОМ",
+      "price": 14.0,
+      "image": "images/olivie-charan.webp",
+      "source_psd": "menu 001(гарнир)+гуляшь copy.psd",
+      "source_layers": [
+        62
+      ],
+      "display_price": "14,0 р."
+    },
+    {
+      "id": "fo-sao",
+      "category": "Вок",
+      "name": "ФО САО",
+      "price": 22.0,
+      "image": "images/fo-sao.webp",
+      "description": "Вок: рисовая лапша с овощами, мясо на выбор",
+      "variants": [
+        {
+          "name": "Курица",
+          "price": 22.0
+        },
+        {
+          "name": "Говядина",
+          "price": 24.0
+        },
+        {
+          "name": "Свинина",
+          "price": 24.0
+        },
+        {
+          "name": "Креветки",
+          "price": 24.0
+        }
+      ],
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        12
+      ],
+      "display_price": "22,0–24,0 р.",
+      "price_from": true
+    },
+    {
+      "id": "mien-sao",
+      "category": "Вок",
+      "name": "МИЕН САО",
+      "price": 22.0,
+      "image": "images/mien-sao.webp",
+      "description": "Вок: стеклянная лапша с овощами, мясо на выбор",
+      "variants": [
+        {
+          "name": "Курица",
+          "price": 22.0
+        },
+        {
+          "name": "Говядина",
+          "price": 24.0
+        },
+        {
+          "name": "Свинина",
+          "price": 24.0
+        },
+        {
+          "name": "Креветки",
+          "price": 24.0
+        }
+      ],
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        124
+      ],
+      "display_price": "22,0–24,0 р.",
+      "price_from": true
+    },
+    {
+      "id": "mi-sao",
+      "category": "Вок",
+      "name": "МИ САО",
+      "price": 22.0,
+      "image": "images/mi-sao.webp",
+      "description": "Вок: вьетнамская лапша с овощами, мясо на выбор",
+      "variants": [
+        {
+          "name": "Курица",
+          "price": 22.0
+        },
+        {
+          "name": "Говядина",
+          "price": 24.0
+        },
+        {
+          "name": "Свинина",
+          "price": 24.0
+        },
+        {
+          "name": "Креветки",
+          "price": 24.0
+        }
+      ],
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        138
+      ],
+      "display_price": "22,0–24,0 р.",
+      "price_from": true
+    },
+    {
+      "id": "com-sao",
+      "category": "Вок",
+      "name": "КОМ САО",
+      "price": 22.0,
+      "image": "images/com-sao.webp",
+      "description": "Вок: рис с овощами, мясо на выбор",
+      "variants": [
+        {
+          "name": "Курица",
+          "price": 22.0
+        },
+        {
+          "name": "Говядина",
+          "price": 24.0
+        },
+        {
+          "name": "Свинина",
+          "price": 24.0
+        },
+        {
+          "name": "Креветки",
+          "price": 24.0
+        }
+      ],
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        139
+      ],
+      "display_price": "22,0–24,0 р.",
+      "price_from": true
+    },
+    {
+      "id": "bo-sao",
+      "category": "Горячие блюда",
+      "name": "БО САО",
+      "price": 22.0,
+      "image": "images/bo-sao.webp",
+      "description": "Говядина с овощами",
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        49
+      ],
+      "display_price": "22,0 р."
+    },
+    {
+      "id": "ga-sao",
+      "category": "Горячие блюда",
+      "name": "ГА САО",
+      "price": 20.0,
+      "image": "images/ga-sao.webp",
+      "description": "Курица с овощами",
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        65
+      ],
+      "display_price": "20,0 р."
+    },
+    {
+      "id": "lon-sao",
+      "category": "Горячие блюда",
+      "name": "ЛОН САО",
+      "price": 21.0,
+      "image": "images/lon-sao.webp",
+      "description": "Свинина с овощами",
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        55
+      ],
+      "display_price": "21,0 р."
+    },
+    {
+      "id": "tom-sao",
+      "category": "Горячие блюда",
+      "name": "ТОМ САО",
+      "price": 22.0,
+      "image": "images/tom-sao.webp",
+      "description": "Креветки с овощами или кальмар (на выбор)",
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        116
+      ],
+      "display_price": "22,0 р."
+    },
+    {
+      "id": "bun-nem",
+      "category": "Лапша",
+      "name": "БУН НЕМ",
+      "price": 21.0,
+      "image": "images/bun-nem.webp",
+      "description": "Рисовая лапша, овощи, ростки фасоли, огурцы и зелень, с немом",
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        104
+      ],
+      "display_price": "21,0 р."
+    },
+    {
+      "id": "fo-chon",
+      "category": "Лапша",
+      "name": "ФО ЧОН",
+      "price": 24.0,
+      "image": "images/fo-chon.webp",
+      "description": "Рисовая лапша с жаренным мясом, с овощами и арахисом",
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        25
+      ],
+      "display_price": "24,0 р."
+    },
+    {
+      "id": "tom-kuon",
+      "category": "Закуски",
+      "name": "ТОМ КУОН",
+      "price": 15.0,
+      "image": "images/tom-kuon.webp",
+      "description": "Спринг-роллы с креветками, курицей и овощами (2 шт.)",
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        7
+      ],
+      "display_price": "15,0 р."
+    },
+    {
+      "id": "tom-chien-su",
+      "category": "Закуски",
+      "name": "ТОМ ЧИЕН СУ",
+      "price": 19.0,
+      "image": "images/tom-chien-su.webp",
+      "description": "Креветки, обжаренные в панировке",
+      "source_psd": "menu 002 (edited)  - no soups-восстановлено.psd",
+      "source_layers": [
+        111
+      ],
+      "display_price": "19,0 р."
+    },
+    {
+      "id": "fo-bo",
+      "category": "Супы",
+      "name": "ФО БО",
+      "price": 18.0,
+      "image": "images/fo-bo.webp",
+      "description": "Суп с говядиной, рисовой лапшой и зеленью",
+      "weight": "600 мл / 800 мл",
+      "variants": [
+        {
+          "name": "600 мл",
+          "price": 18.0
+        },
+        {
+          "name": "800 мл",
+          "price": 20.0
+        }
+      ],
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        95
+      ],
+      "display_price": "18,0–20,0 р.",
+      "price_from": true
+    },
+    {
+      "id": "tom-yam",
+      "category": "Супы",
+      "name": "ТОМ ЯМ с морепродуктами",
+      "price": 20.0,
+      "image": "images/tom-yam.webp",
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        4
+      ],
+      "display_price": "20,0 р."
+    },
+    {
+      "id": "lapsha-vietnam",
+      "category": "Лапша",
+      "name": "ЛАПША вьетнамская",
+      "price": 13.0,
+      "image": "images/lapsha-vietnam.webp",
+      "variants": [
+        {
+          "name": "Сосиски",
+          "price": 13.0
+        },
+        {
+          "name": "Курица",
+          "price": 17.0
+        }
+      ],
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        180
+      ],
+      "display_price": "13,0–17,0 р.",
+      "price_from": true
+    },
+    {
+      "id": "solyanka",
+      "category": "Супы",
+      "name": "СОЛЯНКА суп",
+      "price": 8.0,
+      "image": "images/solyanka.webp",
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        173
+      ],
+      "display_price": "8,0 р."
+    },
+    {
+      "id": "fo-ga",
+      "category": "Супы",
+      "name": "ФО ГА",
+      "price": 17.0,
+      "image": "images/fo-ga.webp",
+      "description": "Суп с курицей, рисовой лапшой и зеленью",
+      "weight": "600 мл / 800 мл",
+      "variants": [
+        {
+          "name": "600 мл",
+          "price": 17.0
+        },
+        {
+          "name": "800 мл",
+          "price": 19.0
+        }
+      ],
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        101
+      ],
+      "display_price": "17,0–19,0 р.",
+      "price_from": true
+    },
+    {
+      "id": "fo-mok",
+      "category": "Супы",
+      "name": "ФО МОК",
+      "price": 20.0,
+      "image": "images/fo-mok.webp",
+      "description": "Суп Фо с фрикадельками (курица)",
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        188
+      ],
+      "display_price": "20,0 р."
+    },
+    {
+      "id": "holodnik",
+      "category": "Супы",
+      "name": "ХОЛОДНИК суп",
+      "price": 7.5,
+      "image": "images/holodnik.webp",
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        170
+      ],
+      "display_price": "7,5 р."
+    },
+    {
+      "id": "gribnoy-sup",
+      "category": "Супы",
+      "name": "ГРИБНОЙ суп",
+      "price": 7.5,
+      "image": "images/gribnoy-sup.webp",
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        154
+      ],
+      "display_price": "7,5 р."
+    },
+    {
+      "id": "fo-hai-shan",
+      "category": "Супы",
+      "name": "ФО ХАЙ ШАН",
+      "price": 21.0,
+      "image": "images/fo-hai-shan.webp",
+      "description": "Суп с рисовой лапшой, морепродуктами, овощами и зеленым луком",
+      "weight": "800 мл",
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        86
+      ],
+      "display_price": "21,0 р."
+    },
+    {
+      "id": "fo-sot-vang",
+      "category": "Супы",
+      "name": "ФО СОТ ВАНГ",
+      "price": 22.0,
+      "image": "images/fo-sot-vang.webp",
+      "description": "Суп Фо с говядиной в пряном соусе",
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        172
+      ],
+      "display_price": "22,0 р."
+    },
+    {
+      "id": "pelmennyy-sup",
+      "category": "Супы",
+      "name": "ПЕЛЬМЕННЫЙ суп",
+      "price": 7.5,
+      "image": "images/pelmennyy-sup.webp",
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        114
+      ],
+      "display_price": "7,5 р."
+    },
+    {
+      "id": "borsh",
+      "category": "Супы",
+      "name": "БОРЩ суп",
+      "price": 7.5,
+      "image": "images/borsh.webp",
+      "source_psd": "soup2.psd",
+      "source_layers": [
+        163
+      ],
+      "display_price": "7,5 р."
+    },
+    {
+      "id": "mango-shake",
+      "category": "Напитки",
+      "name": "МАНГО-ШЕЙК",
+      "price": 13.0,
+      "image": "images/mango-shake.webp",
+      "weight": "400 мл",
+      "source_psd": "menu 003-восстановлено.psd",
+      "source_layers": [
+        16
+      ],
+      "display_price": "13,0 р."
+    },
+    {
+      "id": "bubble-tea",
+      "category": "Напитки",
+      "name": "БАБЛ ТИ",
+      "price": 12.0,
+      "image": "images/bubble-tea.webp",
+      "weight": "400 мл",
+      "source_psd": "menu 003-восстановлено.psd",
+      "source_layers": [
+        82
+      ],
+      "display_price": "12,0 р."
+    },
+    {
+      "id": "milk-coffee",
+      "category": "Напитки",
+      "name": "МОЛОЧНЫЙ КОФЕ",
+      "price": 6.0,
+      "image": "images/milk-coffee.webp",
+      "weight": "300 мл",
+      "source_psd": "menu 003-восстановлено.psd",
+      "source_layers": [
+        65
+      ],
+      "display_price": "6,0 р."
+    },
+    {
+      "id": "passionfruit-shake",
+      "category": "Напитки",
+      "name": "МАРАКУЙЯ-ШЕЙК",
+      "price": 13.0,
+      "image": "images/passionfruit-shake.webp",
+      "weight": "400 мл",
+      "source_psd": "menu 003-восстановлено.psd",
+      "source_layers": [
+        22
+      ],
+      "display_price": "13,0 р."
+    },
+    {
+      "id": "mojito-lemonade",
+      "category": "Напитки",
+      "name": "МОХИТО ЛИМОНАД",
+      "price": 6.0,
+      "image": "images/mojito-lemonade.webp",
+      "weight": "400 мл",
+      "source_psd": "menu 003-восстановлено.psd",
+      "source_layers": [
+        35,
+        40
+      ],
+      "notes": "Изображение собрано из двух видимых графических слоев: стакан + декоративные апельсины.",
+      "display_price": "6,0 р."
+    },
+    {
+      "id": "bac-xiu-coffee",
+      "category": "Напитки",
+      "name": "БАК СИУ КОФЕ",
+      "price": 7.0,
+      "image": "images/bac-xiu-coffee.webp",
+      "weight": "300 мл",
+      "source_psd": "menu 003-восстановлено.psd",
+      "source_layers": [
+        71
+      ],
+      "display_price": "7,0 р."
+    },
+    {
+      "id": "banh-bao",
+      "category": "Закуски",
+      "name": "БАНЬ БАО",
+      "price": 7.0,
+      "image": "images/banh-bao.webp",
+      "description": "Булочка с мясом",
+      "source_psd": "menu 003-восстановлено.psd",
+      "source_layers": [
+        99
+      ],
+      "display_price": "7,0 р."
+    },
+    {
+      "id": "filtered-coffee",
+      "category": "Напитки",
+      "name": "ФИЛЬТРОВАННЫЙ КОФЕ",
+      "price": 8.0,
+      "image": "images/filtered-coffee.webp",
+      "weight": "150 мл",
+      "source_psd": "menu 003-восстановлено.psd",
+      "source_layers": [
+        61
+      ],
+      "display_price": "8,0 р."
+    }
+  ]
+}
